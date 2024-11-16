@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* first child가 span(p가 아님)이라 적용 X */
+        .parent p:first-child{
+            color: lightpink;
+        }
+
+        /* P type의 첫번째인 B에 적용된다 */
+        .parent p:first-of-type{
+            color: lightblue;
+        }
+
+        .container {
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+
+        .container:hover {
+            background-color: lightcoral;
+        }
+
+        /* input박스 클릭시 색 변화 */
+        .focus-input:focus {
+            background-color: lightgreen;
+        }
+
+        /* 자식결합자 > 사용 */
+        .container-two>div {
+            margin-top: 30px;
+            background-color: lightpink;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        /* 홀수번째 child에 적용 */
+        .container-two>div:nth-child(2n+1) {
+            background-color: lightskyblue;
+        }
+
+        /* 마지막 child에 적용 */
+        .container-two>div:last-child {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <span>A</span>
+        <p>B</p>
+        <p>C</p>
+    </div>
+
+    <div class="container container-box">
+        Mouse Hover
+    </div>
+
+    <input class="focus-input" type="text">
+
+    <div class="container-two">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+</html>

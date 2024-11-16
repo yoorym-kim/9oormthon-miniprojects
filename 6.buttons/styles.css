@@ -1,0 +1,27 @@
+.a-button {
+    background-color: rgb(20, 40, 192);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    /* transition 적용으로 스타일 변경 속도+나타나는 효과 조절 */
+    transition: opacity 1s, background-color 3s ease-in;
+}
+
+/* 슈도클래스 적용 : 호버링 시 변화 지정 */
+.a-button:hover {
+    opacity: 0.7;
+    background-color: black;
+}
+
+/* 슈도클래스 적용 : 클릭 시 변화 지정 */
+.a-button:active {
+    opacity: 0.3;
+}
