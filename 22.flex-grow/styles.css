@@ -1,0 +1,36 @@
+.container {
+    border: 6px solid lightgray;
+    display: flex;
+    height: 800px;
+}
+
+.flex-item {
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    /* flex-grow의 기본값은 0 */
+    flex-grow: 0;
+}
+
+.item-1 {
+    background-color: lightblue;
+}
+/* 전체 flex-grow가 0인 상태에서 item-2만 1 */
+/* 남은 공간은 item-2가 차지한다 */
+.item-2 {
+    background-color: lightyellow;
+    flex-grow: 1;
+}
+.item-3 {
+    background-color: lightpink;
+}
+.item-4 {
+    background-color: lightgreen;
+}
+.item-5 {
+    background-color: lightsalmon;
+}
+.item-6 {
+    background-color: lightskyblue;
+}
