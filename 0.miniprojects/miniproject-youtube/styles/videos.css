@@ -1,0 +1,77 @@
+.video-grid {
+    display: grid;
+    column-gap: 16px;
+    row-gap: 40px;
+    padding-top: 30px;
+}
+
+
+/* 동영상 썸네일 + 재생 시간 */
+.thumbnail-row {
+    position: relative;
+    margin-bottom: 8px;
+}
+.thumbnail {
+    width: 100%;
+    border-radius: 18px;
+}
+.video-time {
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: black;
+}
+
+
+/* 동영상 정보 그리드 */
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+/* 유튜버 프로필 */
+.youtuber-profile-picture {
+    width: 36px;
+    border-radius: 50px;
+}
+
+/* 동영상 하단 글들 (제목, 유튜버 이름 */
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;    
+}
+.youtuber-name {
+    margin-bottom: 4px;
+}
+.youtuber-name,
+.video-stats {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+
+
+@media (max-width: 750px){
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px){
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

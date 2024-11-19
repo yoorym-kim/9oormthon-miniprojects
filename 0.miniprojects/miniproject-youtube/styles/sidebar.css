@@ -7,18 +7,13 @@
     width: 72px;
     height: 0%;
     z-index: 200;
-    padding-top: 5px;
-
-    overflow-x: hidden;
-    transition: height 0.5s ease;
-}
-
-.sidebar.open {
-    height: 100%;
+    padding-top: 1px;
 }
 
 .sidebar-link {
     height: 74px;
+    border-radius: 17px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +24,7 @@
 }
 
 .sidebar-link:hover {
-    background-color: #4d4d4d;
+    background-color: #383838;
 }
 
 .sidebar-link img {
@@ -40,4 +35,3 @@
 .sidebar-link div {
     font-size: 10px;
 }
-
