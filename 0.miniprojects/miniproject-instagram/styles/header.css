@@ -1,4 +1,7 @@
 .header {
+    /* main flexbox 정렬순서 */
+    order: 1;
+
     height: 60px;
     width: 100%;
     min-width: none;
@@ -21,7 +24,7 @@
 
 /* 로고 영역 */
 .header__logo {
-    flex-grow: 1;
+    flex: 1;
     margin-left: 18px;
 }
 

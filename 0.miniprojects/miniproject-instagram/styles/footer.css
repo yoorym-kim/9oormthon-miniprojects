@@ -1,0 +1,31 @@
+.footer {
+    /* main flexbox 정렬순서 */
+    order: 3;
+    
+    height: 50px;
+    width: 100%;
+    min-width: none;
+    bottom: 0;
+    position: sticky;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-top: 1px solid #dddddd;
+}
+
+@media (min-width : 800px) {
+    .footer{
+        display: none;
+    }
+}
+
+
+/* 버튼들 styling */
+.footer button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

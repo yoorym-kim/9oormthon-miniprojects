@@ -5,56 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
 
-    <link rel="stylesheet" href="general.css">    
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/main.css">
 
 </head>
 
 <body>
-    <!-- header / 화면크기가 최소기준 줄었을 때만 나타남 -->
-    <header class="header">
-        <header class="header__content">
-            <a class="header__logo" href="index.html">
-                <img src="assets/icons/logo.svg" alt="instagram 로고">
-            </a>
-            <div class="header__search">
-                <input class="search-box" placeholder="검색"/>
-                <img class="search-icon" src="assets/icons/search.svg">
-            </div>
-            <button class="notification-button">
-                <img src="assets/icons/heart.svg" alt="알림">
-            </button>
-        </header>
-    </header>
-
-    <!-- footer / 화면크기가 최소기준 줄었을 때만 나타남 -->
-    <footer class="footer">
-        <button class="home-button">
-
-        </button>
-        <button class="explore-button">
-
-        </button>
-        <button class="reels-button">
-
-        </button>
-        <button class="upload-button">
-
-        </button>
-        <button class="dm-button">
-
-        </button>
-        <button class="profile-button">
-
-        </button>     
-    </footer>
-
-
-
-    <!-- sidebar / 화면크기가 줄면 사라짐 -->
+    <!-- sidebar -->
     <aside class="sidebar">
         <a class="sidebar__logo" href="index.html">
-            <!-- <img src="assets/favicon.svg" alt="instagram 아이콘"> -->
+
         </a>
         <div class="sidebar__menus">
             <button class="home-button">
@@ -91,67 +54,104 @@
     </aside>
 
 
-    <main class="main">
+    <!-- wrapper : header + footer + main -->
+    <div class="wrapper">
+        <!-- header / 화면크기가 최소기준 줄었을 때만 나타남 -->
+        <header class="header">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="assets/icons/logo.svg" alt="instagram 로고">
+                </a>
+            </div>
+            <div class="header__search">
+                <input class="search-box" placeholder="           검색"/>
+                <img class="search-icon" src="assets/icons/search.svg">
+            </div>
+            <button class="notification-button">
+                <img src="assets/icons/heart.svg" alt="알림">
+            </button>
+        </header>
+        
 
-        <!-- main-container / 스토리바+게시글들flex(column)-->
-        <section class="main-container">
-            <!-- 스토리바 -->
-            <div class="storybar">
-                <section class="stories">
-                    <button class="story">
-                        <div class="story__profile-image">
+        <footer class="footer">
+        
+            <button class="home-button">
+                <img src="assets/icons/home.svg" alt="홈">
+            </button>
+            <button class="explore-button">
+                <img src="assets/icons/home.svg" alt="탐색">
+            </button>
+            <button class="reels-button">
+                <img src="assets/icons/home.svg" alt="릴스">
+            </button>
+            <button class="upload-button">
+                <img src="assets/icons/home.svg" alt="업로드">
+            </button>
+            <button class="dm-button">
+                <img src="assets/icons/home.svg" alt="DM">
+            </button>
+            <button class="profile-button">
+                <img src="assets/icons/home.svg" alt="프로필">
+            </button>     
+        </footer>
+
+    
+        <main class="main">
+            메인이세용~
+            <section class="main-container">
+
+                <div class="storybar">
+                    <section class="stories">
+                        <button class="story">
+                            <div class="story__profile-image">
+
+                            </div>
+                            <span class="story__profile-id">
+
+                            </span>
+                        </button>
+                    </section>
+                </div>
+
+
+                <div class="feeds">
+                    <article class="feed">
+                        <div class="feed__header">
+
 
                         </div>
-                        <span class="story__profile-id">
-
-                        </span>
-                    </button>
-                </section>
-            </div>
-
-
-            <!-- 게시글들 flex -->
-            <div class="feeds">
-                <!-- 게시글 -->
-                <article class="feed">
-                    <div class="feed__header">
-
-
-                    </div>
-                    <div class="feed__images">
-
-                    </div>
-                    <div class="feed__footer">
-                        <div class="feed__footer-buttons">
-                            
-                        </div>
-                        <div class="feed__likes">
+                        <div class="feed__images">
 
                         </div>
-                        <div class="feed__writings">
+                        <div class="feed__footer">
+                            <div class="feed__footer-buttons">
+                                
+                            </div>
+                            <div class="feed__likes">
 
-                        </div>
-                        <div class="feed__comments">
+                            </div>
+                            <div class="feed__writings">
 
-                        </div>>
-                    </div>                    
-                </article>
-            </div>
+                            </div>
+                            <div class="feed__comments">
+
+                            </div>
+                        </div>                    
+                    </article>
+                </div>
 
 
-        </section>
+            </section>
 
-        <!-- profile-container -->
-        <section class="profile-container">
-            <!-- 유저 프로필 -->
-            <div class="user-profile">
+            <section class="profile-container">
+                <div class="user-profile">
 
-            </div>
-            <div class="">
+                </div>
+                <div class="friend-recommend아몰라">
 
-            </div>
-        </section>
+                </div>
+            </section>
 
-    </main>
-</body>
+        </main>
+    </div>
 </html>
