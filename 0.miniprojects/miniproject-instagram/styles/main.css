@@ -1,9 +1,8 @@
 .main {
-    /* main flexbox 정렬순서 */
+    /* wrapper flexbox 정렬순서 */
     order: 2;
 
     display: flex;
 
     flex: 1;
-    background-color: rgb(95, 255, 255);
 }
