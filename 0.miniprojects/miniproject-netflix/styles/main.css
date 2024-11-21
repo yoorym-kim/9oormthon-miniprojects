@@ -1,0 +1,17 @@
+.main {
+    background-color: var(--main-background);
+    height: 100%;
+}
+
+.big-movie__thumbnail {
+    width: 100%;
+    
+    position: relative;
+}
+
+.big-movie__logo {
+    position: absolute;
+
+    left: 20px;
+    bottom: 30%;
+}
