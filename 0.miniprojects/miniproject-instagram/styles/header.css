@@ -6,12 +6,13 @@
     width: 100%;
     min-width: none;
     top: 0;
-    position: sticky;
+    position: fixed;
 
     display: flex;
     flex-direction: row;
     align-items: center;
 
+    background-color: var(--main-background);
     border-bottom: 1px solid var(--border-color);
 }
 

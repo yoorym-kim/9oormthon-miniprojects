@@ -8,6 +8,11 @@
     align-items: flex-start;
 }
 
+@media (min-width : 800px) {
+    .top-space {
+        display: none;
+    }
+}
 /* 피드박스 설정 */
 
 .feed a {
