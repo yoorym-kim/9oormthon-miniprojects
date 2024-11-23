@@ -1,6 +1,11 @@
 .main {
     background-color: var(--main-background);
     height: 100%;
+    width: 100%;
+}
+
+.big-movie {
+    width: 100%;
 }
 
 .big-movie__thumbnail {
@@ -9,9 +14,55 @@
     position: relative;
 }
 
-.big-movie__logo {
+.big-movie__description {
     position: absolute;
 
+    color: white;
+    width: 30%;
     left: 20px;
     bottom: 30%;
+}
+
+.big-movie__logo {
+    width: 100%;
+}
+
+
+.big-movie__buttons {
+    display: flex;
+}
+
+.big-movie__buttons button {
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    border: transparent;
+    border-radius: 15px;
+}
+
+.big-movie__buttons p {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.big-movie__buttons .play-button {
+    width: 30%;
+    background-color: #FFFFFF;
+}
+
+.big-movie__buttons .info-button {
+    width: 35%;
+    background-color: #6a6a6a;
+
+    margin-left: 10px;
+}
+
+.info-button p {
+    color: #FFFFFF;
+}
+
+.big-movie__buttons img {
+    width: 25px;
+    padding-left: 10px;
 }
