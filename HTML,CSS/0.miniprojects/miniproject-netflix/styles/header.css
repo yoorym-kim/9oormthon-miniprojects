@@ -1,0 +1,44 @@
+.header {
+    background-color: var(--main-background);
+    height: 68px;
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.header button {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+
+    padding: 10px;
+
+}
+
+.header__options-left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+
+    /* border-left: 30px; */
+}
+
+.header__options-left img {
+    height: 68px;
+}
+
+/* 오른쪽 버튼들 */
+
+.header__options-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    /* border-right: 20px; */
+}
+
+.header__options-right button img {
+    height: 32px;
+}

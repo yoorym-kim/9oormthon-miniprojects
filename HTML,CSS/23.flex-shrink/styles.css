@@ -1,0 +1,28 @@
+.container {
+    border: 6px solid lightgray;
+    display: flex;
+    height: 400px;
+}
+
+.flex-item {
+    color: black;
+    width: 120;
+    /* flex-shrink 기본값은 1이라 이미 적용이 되어있는 상태 */
+    /* 0으로 새로 설정해보자 */
+    flex-shrink: 0;
+}
+
+.item-1 {
+    background-color: lightblue;
+}
+.item-2 {
+    background-color: lightyellow;
+}
+.item-3 {
+    background-color: lightpink;
+}
+/* item-4만 빈공간에 맞추어 줄여짐 */
+.item-4 {
+    background-color: lightgreen;
+    flex-shrink: 1;
+}

@@ -1,0 +1,71 @@
+.header {
+    /* wrapper flexbox 정렬순서 */
+    order: 1;
+
+    height: 60px;
+    width: 100%;
+    min-width: none;
+    top: 0;
+    position: fixed;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: var(--main-background);
+    border-bottom: 1px solid var(--border-color);
+}
+
+@media (min-width : 800px) {
+    .header{
+        display: none;
+    }
+}
+
+
+/* 로고 영역 */
+.header__logo {
+    flex: 1;
+    margin-left: 18px;
+}
+
+.header__logo img {
+    margin-top: 6px;
+}
+
+
+/* 검색창 */
+.header__search {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header__search .search-box {
+    height: 60%;
+    width: 270px;
+    border: transparent;
+    border-radius: 18px;
+    background-color: #EFEFEF;
+}
+
+.header__search .search-icon {
+    position: absolute;
+    left: 14px;
+    height: 17px;
+}
+
+
+/* 알림버튼 */
+/* sidebar에서 같은 버튼 사용해서 헤더의 알림버튼으로 지정하여 스타일 다르게 함 */
+.header .notification-button {
+    width: 60px;
+    border: none;
+    background-color: transparent;
+}
+
+.notification-button img {
+    cursor: pointer;
+}
+
