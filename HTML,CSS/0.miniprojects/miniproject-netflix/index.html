@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="header__options-left">
-            <img class="netflix-logo" src="assets/icons/netflix-logo.png" alt="netflix-logo">
+            <img class="netflix-logo" src="assets/icons/netflix-logo.svg" alt="netflix-logo">
             <button>홈</button>
             <button>시리즈</button>
             <button>영화</button>
@@ -33,40 +33,69 @@
             </button>
         </div>
     </header>
+
     <main class="main">
-        <section class="big-movie">
-            <img class="big-movie__thumbnail" src="assets/images/thumbnail.webp" alt="big-movie__thumbnail">
-            <div class="big-movie__description">
-                <img class="big-movie__logo" src="assets/icons/movie-logo.webp" alt="big-movie__logo">
-                <div>
-                    <img class="top-10-icon" alt="top-10-icon 추가바람,,">
-                    <p>오늘 시리즈 순위 3위</p>
+        <div class="top-container">
+            <section class="big-movie">
+                <div class="big-movie__thumbnail">
+                    <img src="assets/images/thumbnail.webp" alt="big-movie__thumbnail">
                 </div>
-                <p>
-                    세계적인 거장 박찬욱 감독 <올드보이> <헤어질 결심>이 제작과 공동<br>
-                    각본을 맡은 영화. 신분의 차이를 넘어 우정을 나누었던 두 남자가 격랑의<br>
-                    시대에 휩쓸리며 서로에게 검을 겨눈다.
-                </p>
-                <div class="big-movie__buttons">
-                    <button class="play-button">
-                        <img class="play" src="assets/icons/play.svg" alt="play"> 
-                        <p>재생</p>
-                    </button>
-                    <button class="info-button">ㅔ
-                        }|
-                    }ㅊㅊㄹㄱㄴㅋ1ㅁㅁㅃㅋ!ㅈㄴㅌㄷ2ㅇ3ㅊㄱ ㄹ4ㅍㅅㅎ5ㅠㅗㅛㅝ7                       <img class="info" src="assets/icons/info.svg" alt="info">
-                        <p>상세 정보</p>
-                    </button>
+                <div class="big-movie__description">
+                    <img class="big-movie__logo" src="assets/icons/movie-logo.webp" alt="big-movie__logo">
+                    <div class="top-10">
+                        <img class="top-10-icon" src="assets/icons/top-10.png" alt="top-10-icon">
+                        <p>오늘 시리즈 순위 3위</p>
+                    </div>
+                    <p class="descriptions">
+                        세계적인 거장 박찬욱 감독 <올드보이> <헤어질 결심>이 제작과 공동<br>
+                        각본을 맡은 영화. 신분의 차이를 넘어 우정을 나누었던 두 남자가 격랑의<br>
+                        시대에 휩쓸리며 서로에게 검을 겨눈다.
+                    </p>
+                    <div class="big-movie__buttons">
+                        <button class="play-button">
+                            <img class="play" src="assets/icons/play.svg" alt="play"> 
+                            <p>재생</p>
+                        </button>
+                        <button class="info-button">
+                            <img class="info" src="assets/icons/info.svg" alt="info">
+                            <p>상세 정보</p>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        
-        <section class="recomend-movies">
+            </section>
+            
+            <section class="festival-movie">
+                <h3>대종상 영화제 수상작 & 후보작</h3>
+                <div class="festival-movie__movies">
+                    <img src="assets/images/mini-thumbnail-1.png" alt="mini-thumbnail">
+                    <img src="assets/images/mini-thumbnail-2.png" alt="mini-thumbnail">
+                    <img src="assets/images/mini-thumbnail-3.png" alt="mini-thumbnail">
+                    <img src="assets/images/mini-thumbnail-4.png" alt="mini-thumbnail">
+                    <img src="assets/images/mini-thumbnail-5.png" alt="mini-thumbnail">
+                    <img src="assets/images/mini-thumbnail-6.png" alt="mini-thumbnail">
+                    <img src="assets/images/mini-thumbnail-7.png" alt="mini-thumbnail">
+                </div>
+            </section>        
+        </div>
 
-        </section>
-
+        <!-- <div class="bottom-container">
+            <section class="korean-movie">
+                <h3>언제봐도 좋은 한국 영화</h3>
+                <div class="korean-movie__movies">
+                    <img src="assets/images/mini-thumbnail-1.png" alt="mini-thumbnail">
+                    <img src="assets/images/mini-thumbnail-2.png" alt="mini-thumbnail">
+                    <img src="assets/images/mini-thumbnail-3.png" alt="mini-thumbnail">
+                    <img src="assets/images/mini-thumbnail-4.png" alt="mini-thumbnail">
+                    <img src="assets/images/mini-thumbnail-5.png" alt="mini-thumbnail">
+                    <img src="assets/images/mini-thumbnail-6.png" alt="mini-thumbnail">
+                    <img src="assets/images/mini-thumbnail-7.png" alt="mini-thumbnail">
+                </div>
+            </section>
+        </div> -->
     </main>
 
+    <!-- JavaScript 파일 링크 -->
+    <script src="script.js"></script>
     </body>
 </body>
 </html>
