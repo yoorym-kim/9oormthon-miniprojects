@@ -1,0 +1,55 @@
+.sidebar {
+    width: 70px;
+    border-right: 1px solid var(--border-color);
+
+    left: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (max-width : 800px) {
+    .sidebar{
+        display: none;
+    }
+
+}
+
+/* 각 div 섹션 한번에 설정 */
+
+.sidebar div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+/*  flex 섹션 1 */
+.sidebar__logo {
+    height: 12%;
+
+    /* justify-self: center; */
+    /* align-self: center; */
+}
+
+/*  flex 섹션 2 */
+.sidebar__menus {
+    flex: 1;
+}
+
+/*  flex 섹션 3 */
+.sidebar__others {
+    height: 20%;
+
+}
+
+
+
+/* 아이콘 크기 전체지정 */
+.sidebar img, button {
+    height: 24px;
+    border: transparent;
+    background-color: transparent;
+}

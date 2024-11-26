@@ -1,0 +1,217 @@
+.main {
+    background-color: var(--main-background);
+    height: 100%;
+    width: 100%;
+
+    /* display: flex;
+    flex-direction: column; */
+}
+
+
+/* top-container 파트 ---------------------------------------------------------- */
+
+
+.top-container {
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+/* big-movie 파트 ---------------------------------------- */
+
+.big-movie {
+    width: 100%;
+}
+
+/* 썸네일 이미지 */
+.big-movie__thumbnail {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden; /* 그림자가 이미지 밖으로 넘지 않게 */
+}
+
+.big-movie__thumbnail img {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 0; /* 이미지는 아래로 */
+}
+
+.big-movie__thumbnail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse 190% 100%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%);
+    pointer-events: none;
+    z-index: 1; 
+}
+
+
+
+
+/* 설명 컨테이너 */
+.big-movie__description {
+    position: absolute;
+
+    left: 60px;
+    top: 16%;
+    color: white;
+    width: 40%;
+
+    z-index: 2; 
+}
+
+.big-movie__logo {
+    width: 100%;
+    padding-bottom: 27px;
+}
+
+/* top-10 */
+.top-10 {
+    display: flex;
+    align-items: center;
+}
+
+.top-10-icon {
+    height: 30px;
+}
+
+.top-10 p {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+/* 영화 설명 */
+.descriptions {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/* 영화 버튼들 */
+.big-movie__buttons {
+    display: flex;
+    margin-top: 13px;
+}
+
+.big-movie__buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+
+    border: transparent;
+    border-radius: 10px;
+}
+
+.big-movie__buttons p {
+    font-size: 16px;
+    padding-left: 7px;
+}
+
+.big-movie__buttons .play-button {
+    width: 20%;
+    background-color: #FFFFFF;
+}
+
+.big-movie__buttons .info-button {
+    width: 25%;
+    background-color: #505354;
+
+    margin-left: 10px;
+}
+
+.info-button p {
+    color: #FFFFFF;
+}
+
+.big-movie__buttons img {
+    width: 25px;
+}
+
+
+
+/* festival-movie 파트 ---------------------------------------- */
+
+.festival-movie {
+    width: 100%;
+    margin-left: 60px;
+
+    position: absolute;
+    bottom: 0%;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.festival-movie h3 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.festival-movie .festival-movie__movies {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    margin-top: 20px;
+
+    width: 90%;
+    
+}
+
+.festival-movie__movies img {
+    height: 122px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+/* bottom-container 파트 ---------------------------------------------------------- */
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* korean-movie 파트 ---------------------------------------- */
+
+
+.korean-movie {
+    width: 100%;
+    margin-left: 60px;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.korean-movie h3 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.korean-movie .korean-movie__movies {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    margin-top: 20px;
+
+    width: 90%;
+    
+}
+
+.korean-movie__movies img {
+    height: 122px;
+    margin-left: 5px;
+    margin-right: 5px;
+}

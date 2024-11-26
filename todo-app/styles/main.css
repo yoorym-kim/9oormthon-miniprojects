@@ -1,0 +1,116 @@
+.main {
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    height: 3000px;
+
+    background-color: #E27680;
+}
+
+/* 헤더 */
+.header {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header h1 {
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-left: 30px;
+}
+
+.header button {
+    cursor: pointer;
+    border: transparent;
+    background-color: transparent;
+    font-size: 17px;
+    color: #FFFFFF;
+    text-decoration: underline;
+    padding-right: 30px;
+}
+
+
+
+/* todo-list */
+.todo-list {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/* todo */
+.todo {
+    margin-top: 10px;
+    height: 50px;
+    width: 90%;
+    border: 3px solid #ffffff00;
+    background-color: #B4DBE5;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.todo:hover {
+    border: 3px solid #ffffff;
+
+}
+
+.todo button {
+    background-color: transparent;
+    border: transparent;
+}
+
+.input-todo {
+    cursor: pointer;
+    width: 70%;
+    font-size: 15px;
+
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #FFFFFF00;
+    outline: none;  /* 포커스 시 기본 외각선 제거 */
+}
+
+.check-todo {
+    margin-left: 20px;
+}
+
+.delete-todo {
+    margin-right: 10px;
+}
+
+.change-todo img {
+    height: 15px;
+}
+
+.delete-todo img {
+    height: 18px;
+}
+
+
+
+
+/* todo 클릭시 */
+.todo.clicked {
+    border: 2px solid #ffffff;
+}
+.input-todo.clicked {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+
+/* check-todo 체크 시*/
+.todo.done {
+    background-color: #C1BEC8;
+}
+
+.input-todo.done {
+    text-decoration: line-through;
+}
