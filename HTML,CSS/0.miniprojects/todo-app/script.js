@@ -60,6 +60,8 @@ const todoList = document.querySelector('.todo-list');
 const todoPlus = document.querySelector('.plus-todo');
 const todo = document.querySelector('.todo');
 
+
+
 // 기존 todo 항목에 대해 이벤트 리스너 설정
 function addTodoEventListeners(todoElement) {
     const inputTodo = todoElement.querySelector('.input-todo');
@@ -70,6 +72,7 @@ function addTodoEventListeners(todoElement) {
     // change-todo 버튼 클릭시
     changeTodo.addEventListener('click', () => {
         todoElement.classList.add('clicked');
+        inputTodo.classList.add('clicked');
         inputTodo.focus(); // 입력창에 focus
     });
 
@@ -78,12 +81,14 @@ function addTodoEventListeners(todoElement) {
         if (event.key === 'Enter') {
             inputTodo.blur(); // 입력 대기 종료
             todoElement.classList.remove('clicked'); // clicked 클래스 제거
+            inputTodo.classList.remove('clicked'); // clicked 클래스 제거
         }
     });
 
     // check-todo / 'change' 로 체크박스 상태에 따른 변화 감지
     checkTodo.addEventListener('change', () => {
         todoElement.classList.toggle('done', checkTodo.checked); // 체크 상태에 따라 'done' 클래스 토글
+        inputTodo.classList.toggle('done', checkTodo.checked);
     });
 
     // delete-todo 버튼의 클릭 감지
@@ -92,6 +97,9 @@ function addTodoEventListeners(todoElement) {
         todoToDelete.remove(); // 해당 todo 삭제
     });
 }
+
+
+
 
 // 기존 todo 항목들에 대해 이벤트 리스너 설정
 document.querySelectorAll('.todo').forEach(addTodoEventListeners);

@@ -10,22 +10,26 @@
 
 /* 헤더 */
 .header {
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .header h1 {
     font-size: 20px;
     color: #FFFFFF;
+    padding-left: 30px;
 }
 
 .header button {
     cursor: pointer;
     border: transparent;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 17px;
     color: #FFFFFF;
-
+    text-decoration: underline;
+    padding-right: 30px;
 }
 
 
@@ -41,9 +45,10 @@
 
 /* todo */
 .todo {
+    margin-top: 10px;
     height: 50px;
     width: 90%;
-    border: 3px solid #3f3f3f;
+    border: 3px solid #ffffff00;
     background-color: #B4DBE5;
     border-radius: 20px;
 
@@ -63,8 +68,22 @@
 }
 
 .input-todo {
+    cursor: pointer;
     width: 70%;
     font-size: 15px;
+
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #FFFFFF00;
+    outline: none;  /* 포커스 시 기본 외각선 제거 */
+}
+
+.check-todo {
+    margin-left: 20px;
+}
+
+.delete-todo {
+    margin-right: 10px;
 }
 
 .change-todo img {
@@ -75,12 +94,23 @@
     height: 18px;
 }
 
+
+
+
 /* todo 클릭시 */
 .todo.clicked {
-    border: 3px solid #ffffff;
+    border: 2px solid #ffffff;
 }
+.input-todo.clicked {
+    border-bottom: 2px solid #FFFFFF;
+}
+
 
 /* check-todo 체크 시*/
 .todo.done {
-    background-color: #829fa6;
+    background-color: #C1BEC8;
+}
+
+.input-todo.done {
+    text-decoration: line-through;
 }
