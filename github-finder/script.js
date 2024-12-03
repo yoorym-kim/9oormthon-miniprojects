@@ -14,11 +14,11 @@ document.getElementById('search-input').addEventListener('keydown', (event) => {
 function fetchUserProfile(id) {
     fetch(`${GITHUB_API}/users/${id}`)
         .then((response) => response.json())
-        .then((data) => {
-            if (data.message === 'Not Found') {
+        .then((userData) => {
+            if (userData.message === 'Not Found') {
                 showError('User not found');
             } else {
-                displayUserProfile(data);
+                displayUserProfile(userData);
             }
         });
 }
@@ -31,12 +31,14 @@ function fetchLatestRepos(id) {
     });
 }
 
-function displayUserProfile(data){
+function displayUserProfile(userData){
     const userProfile = document.querySelector('.user-profile');
-    userProfile.firstElementChild.firstElementChild.setAttribute('src', `${data.avatar_url}`)
-    
+    userProfile.firstElementChild.firstElementChild.setAttribute('src', `${userData.avatar_url}`);
+    document.querySelector('.view-profile-button').addEventListener('click', () => {
+        window.location.href = `https://github.com/${id}`;
+    })
 }
 
 function displayLatestRepos(repos){
-
+    
 }
