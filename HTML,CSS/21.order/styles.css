@@ -1,0 +1,39 @@
+.container {
+    border: 6px solid lightgray;
+    display: flex;
+    height: 800px;
+}
+
+.flex-item {
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* order 기본값은 0 */
+.item-1 {
+    background-color: lightblue;
+}
+/* order 값 설정 */
+.item-2 {
+    background-color: lightyellow;
+    order: -1;
+}
+/* order 값 설정 */
+.item-3 {
+    background-color: lightpink;
+    order: 6;
+}
+.item-4 {
+    background-color: lightgreen;
+}
+
+.item-5 {
+    background-color: lightsalmon;
+    order: 2;
+}
+
+.item-6 {
+    background-color: lightskyblue;
+}
